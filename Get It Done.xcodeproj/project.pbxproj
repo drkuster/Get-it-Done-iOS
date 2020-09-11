@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA01BBB8250B18B9004C3257 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01BBB7250B18B9004C3257 /* Task.swift */; };
+		AA01BBBF250B1D4E004C3257 /* Task Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01BBBD250B1D4E004C3257 /* Task Cell.swift */; };
+		AA01BBC0250B1D4E004C3257 /* Task Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA01BBBE250B1D4E004C3257 /* Task Cell.xib */; };
 		AA7A464A2507069F0086E8F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A46492507069F0086E8F5 /* AppDelegate.swift */; };
 		AA7A464C2507069F0086E8F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A464B2507069F0086E8F5 /* SceneDelegate.swift */; };
 		AA7A464E2507069F0086E8F5 /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A464D2507069F0086E8F5 /* WeekViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA01BBB7250B18B9004C3257 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		AA01BBBD250B1D4E004C3257 /* Task Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task Cell.swift"; sourceTree = "<group>"; };
+		AA01BBBE250B1D4E004C3257 /* Task Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Task Cell.xib"; sourceTree = "<group>"; };
 		AA7A46462507069F0086E8F5 /* Get It Done.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get It Done.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7A46492507069F0086E8F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA7A464B2507069F0086E8F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				AA7A464F2507069F0086E8F5 /* Main.storyboard */,
+				AA01BBBD250B1D4E004C3257 /* Task Cell.swift */,
+				AA01BBBE250B1D4E004C3257 /* Task Cell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				AA7A4664250727370086E8F5 /* DaySelected.swift */,
+				AA01BBB7250B18B9004C3257 /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7A4656250706A10086E8F5 /* LaunchScreen.storyboard in Resources */,
+				AA01BBC0250B1D4E004C3257 /* Task Cell.xib in Resources */,
 				AA7A4653250706A10086E8F5 /* Assets.xcassets in Resources */,
 				AA7A46512507069F0086E8F5 /* Main.storyboard in Resources */,
 			);
@@ -176,6 +186,8 @@
 				AA7A4661250724F40086E8F5 /* DayViewController.swift in Sources */,
 				AA7A464A2507069F0086E8F5 /* AppDelegate.swift in Sources */,
 				AA7A464C2507069F0086E8F5 /* SceneDelegate.swift in Sources */,
+				AA01BBBF250B1D4E004C3257 /* Task Cell.swift in Sources */,
+				AA01BBB8250B18B9004C3257 /* Task.swift in Sources */,
 				AA7A465F2507234F0086E8F5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

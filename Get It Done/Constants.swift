@@ -11,4 +11,5 @@ import Foundation
 public struct K
 {
     static let detailSegue = "goToDayDetail"
+    static let taskCell = "taskCell"
 }
