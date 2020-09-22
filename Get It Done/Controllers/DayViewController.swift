@@ -18,6 +18,7 @@ class DayViewController: UIViewController {
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var addButton: UIButton!
     
+    var thingsToDo = 0
     var tasks: [Task] = []
     var daySelected = DaySelected(day: "", backgroundColor: .white)
     
@@ -47,6 +48,13 @@ class DayViewController: UIViewController {
         addButton.setBackgroundImage(UIImage(systemName: "plus.circle.fill"), for: .highlighted)
     }
     
+    func updateThingsTodo(_ offset: Int) {
+        thingsToDo += offset
+        DispatchQueue.main.async {
+            self.thingsToDoLabel.text = "You have \(self.thingsToDo) to do."
+        }
+    }
+    
 }
 
 // MARK: - Button Handling
@@ -59,6 +67,7 @@ extension DayViewController {
         let alert = UIAlertController(title: "Add New Task", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { (alertAction) in
             let task = Task( descriptionInput.text!, categoryInput.text!)
+            self.updateThingsTodo(1)
             self.tasks.append(task)
             self.taskTableView.reloadData()
         }))
@@ -95,6 +104,7 @@ extension DayViewController: TaskCellDelegate {
         DispatchQueue.main.async {
             self.tasks.remove(at: index)
             self.taskTableView.deleteRows(at: [IndexPath(row: index, section: 0)], with: .left)
+            self.updateThingsTodo(-1)
             self.taskTableView.reloadData()
         }
     }
