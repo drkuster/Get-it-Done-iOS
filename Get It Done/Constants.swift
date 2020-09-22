@@ -12,4 +12,6 @@ public struct K
 {
     static let detailSegue = "goToDayDetail"
     static let taskCell = "taskCell"
+    static let brandWhite = "Brand White"
+    static let brandRed = "Brand Red"
 }

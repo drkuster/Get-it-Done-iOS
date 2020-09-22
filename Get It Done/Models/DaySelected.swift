@@ -9,6 +9,8 @@
 import UIKit
 
 struct DaySelected {
+    
     var day: String?
     var backgroundColor: UIColor?
+    
 }

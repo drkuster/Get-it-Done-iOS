@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: - Renver View
+
 class WeekViewController: UIViewController {
     
     @IBOutlet var notifBubbles: Array<UIView>?
@@ -35,10 +37,22 @@ class WeekViewController: UIViewController {
         }
     }
     
+}
+
+// MARK: - Button Handling
+
+extension WeekViewController {
+    
     @IBAction func dayClicked(_ sender : UIButton) {
         daySelected = DaySelected(day: sender.currentTitle, backgroundColor: sender.backgroundColor)
         performSegue(withIdentifier: K.detailSegue, sender: self)
     }
+    
+}
+
+// MARK: - Segue Handling
+
+extension WeekViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! DayViewController
