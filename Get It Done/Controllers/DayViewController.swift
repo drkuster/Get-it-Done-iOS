@@ -50,8 +50,9 @@ class DayViewController: UIViewController {
     
     func updateThingsTodo(_ offset: Int) {
         thingsToDo += offset
+        let plural = self.thingsToDo == 1 ? "thing" : "things"
         DispatchQueue.main.async {
-            self.thingsToDoLabel.text = "You have \(self.thingsToDo) to do."
+            self.thingsToDoLabel.text = "You have \(self.thingsToDo) \(plural)\nto do."
         }
     }
     
